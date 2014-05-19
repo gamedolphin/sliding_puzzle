@@ -172,7 +172,7 @@ BasicGame.Game.prototype = {
         var flag = true;
         for(var i=0;i<4;i++){
             for(var j=0;j<4;j++){
-                if(i!=3&&j!=3){
+                if((i*4)+j+1!=16){
                     if(this.matrix[i][j]!=(i*4)+j+1){
                         flag = false;
                         return;
